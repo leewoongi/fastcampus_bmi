@@ -4,4 +4,7 @@
     <string name="title_tall">신장</string>
     <string name="title_weight">체중</string>
     <string name="title_confirm">확인하기</string>
+    <string name="title_bmi">BMI</string>
+    <string name="title_result">결과</string>
+
 </resources>

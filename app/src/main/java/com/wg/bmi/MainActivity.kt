@@ -37,13 +37,13 @@ class MainActivity : AppCompatActivity() {
             val weight: Int = weightEditText.text.toString().toInt()
             Log.d(tag, "height : $height , weight : $weight")
 
-            calculateBmi()
+            sendDataToResultActivity(height, weight)
         }
 
     }
 
     private fun initialize() {
-        tallEditText = findViewById(R.id.et_tall)
+        tallEditText = findViewById(R.id.et_height)
         weightEditText = findViewById(R.id.et_weight)
         confirmButton = findViewById(R.id.bt_confirm)
     }
@@ -58,8 +58,10 @@ class MainActivity : AppCompatActivity() {
         return weightEditText.text.isEmpty()
     }
 
-    private fun calculateBmi() {
+    private fun sendDataToResultActivity(height: Int, weight: Int) {
         val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("height", height)
+        intent.putExtra("weight", weight)
         startActivity(intent)
     }
 }

@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_tall_title"
+        android:id="@+id/tv_height_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -20,13 +20,13 @@
         android:textColor="@color/black"
         app:layout_constraintVertical_chainStyle="spread_inside"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintBottom_toTopOf="@+id/et_tall"
+        app:layout_constraintBottom_toTopOf="@+id/et_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
     </TextView>
 
     <EditText
-        android:id="@+id/et_tall"
+        android:id="@+id/et_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -35,9 +35,9 @@
         android:layout_marginBottom="8dp"
         android:inputType="numberSigned"
         app:layout_constraintBottom_toTopOf="@+id/tv_weight_title"
-        app:layout_constraintEnd_toEndOf="@+id/tv_tall_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_tall_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tall_title">
+        app:layout_constraintEnd_toEndOf="@+id/tv_height_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_height_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height_title">
     </EditText>
 
     <TextView
@@ -51,8 +51,8 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/et_weight"
-        app:layout_constraintStart_toStartOf="@+id/tv_tall_title"
-        app:layout_constraintTop_toBottomOf="@+id/et_tall">
+        app:layout_constraintStart_toStartOf="@+id/tv_height_title"
+        app:layout_constraintTop_toBottomOf="@+id/et_height">
     </TextView>
 
     <EditText
